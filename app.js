@@ -36,7 +36,7 @@ function renderCountries(data){
         countriesContainer.innerHTML="";
         data.forEach((country)=>{
             const countryCard=document.createElement('a');
-            countryCard.href=`file:///D:/C++/Rest%20countries/country.html?name=${country.name.common}`;
+            countryCard.href=`country.html?name=${country.name.common}`;
             countryCard.classList.add('country-card');
             countryCard.innerHTML=`<img src="${country.flags.svg}" alt="flag"></img>
                                     <div class="card-text">
